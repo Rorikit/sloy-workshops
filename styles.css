@@ -146,13 +146,8 @@ blockquote footer { margin-top: 22px; color: var(--muted); font-size: 13px; }
 
 .atmosphere { display: grid; grid-template-columns: .68fr 1.32fr; gap: clamp(50px, 8vw, 130px); align-items: center; }
 .atmosphere-copy p { max-width: 470px; color: var(--muted); }
-.video-frame { margin: 0; position: relative; overflow: hidden; background: #111; box-shadow: var(--shadow); }
+.video-frame { margin: 0; box-shadow: var(--shadow); }
 .video-frame video { aspect-ratio: 16/9; object-fit: cover; background: #111; }
-.video-frame audio { display: none; }
-.video-controls { position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; padding: 36px 18px 16px; color: #fff; background: linear-gradient(transparent, rgba(5, 8, 6, .82)); }
-.video-controls button { min-height: 42px; display: inline-flex; align-items: center; gap: 9px; border: 1px solid rgba(255,255,255,.55); background: rgba(15,20,17,.7); color: #fff; padding: 8px 13px; cursor: pointer; backdrop-filter: blur(8px); }
-.video-controls button:hover { background: var(--accent); border-color: var(--accent); }
-.video-time { justify-self: center; font-variant-numeric: tabular-nums; font-size: 12px; }
 
 .cta { text-align: center; background: var(--surface-2); border-top: 1px solid var(--line); }
 .cta h2 { font-size: clamp(66px, 11vw, 170px); margin-bottom: 50px; }
@@ -211,9 +206,6 @@ dialog::backdrop { background: rgba(10, 14, 12, .72); backdrop-filter: blur(5px)
   .visit-grid { gap: 50px; }
   .visit li { grid-template-columns: 42px 1fr; gap: 16px; }
   .site-footer { grid-template-columns: 1fr; }
-  .video-controls { gap: 8px; padding: 28px 10px 10px; }
-  .video-controls button { padding: 8px 10px; }
-  .video-controls .control-label { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

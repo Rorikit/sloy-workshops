@@ -37,7 +37,7 @@
 
 > Photorealistic-natural website workshop-card photo set; exact 4×2 contact sheet. Eight distinct documentary scenes: speckled clay cup, linocut, visible denim mending, film darkroom, terrarium, bookbinding, soy candle and botanical cyanotype. Natural editorial photography, cohesive warm window light, cream/terracotta/cobalt/moss/charcoal palette; no text, logos, watermarks, malformed hands or duplicated scenes.
 
-Короткое видео Mixkit показывает керамиста, который вручную разминает глину в мастерской. Исходный ролик не содержит аудиодорожки, поэтому к нему добавлен локальный фоновый звук Mixkit и собственная панель управления. Кнопка звука действительно включает и выключает аудио, а воспроизведение и пауза синхронизируют обе дорожки.
+Короткое видео Mixkit показывает керамиста, который вручную разминает глину в мастерской. Файл сохранён локально, поэтому воспроизведение не зависит от стороннего hotlink. До начала воспроизведения элемент показывает согласованный кадр с керамикой.
 
 ## 5. Каталог и сетка
 
