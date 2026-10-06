@@ -37,7 +37,7 @@
 
 > Photorealistic-natural website workshop-card photo set; exact 4×2 contact sheet. Eight distinct documentary scenes: speckled clay cup, linocut, visible denim mending, film darkroom, terrarium, bookbinding, soy candle and botanical cyanotype. Natural editorial photography, cohesive warm window light, cream/terracotta/cobalt/moss/charcoal palette; no text, logos, watermarks, malformed hands or duplicated scenes.
 
-Короткое видео о ручной работе с глиной подключено с Pexels. У элемента есть локальный постер, понятный fallback внутри `video` и развёрнутая текстовая альтернатива в `figcaption`.
+Короткое ботаническое видео из CC0-примеров MDN сохранено локально. Так воспроизведение не зависит от запрета стороннего hotlink. У элемента есть локальный постер, понятный fallback внутри `video` и точная текстовая альтернатива в `figcaption`.
 
 ## 5. Каталог и сетка
 

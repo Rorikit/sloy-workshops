@@ -6,7 +6,7 @@
 
 ## Запуск
 
-Самый простой способ — открыть `index.html` в браузере. Для корректного поведения внешнего видео и шрифтов удобнее запустить локальный сервер:
+Самый простой способ — открыть `index.html` в браузере. Для корректной загрузки локального видео и внешних шрифтов удобнее запустить локальный сервер:
 
 ```powershell
 node dev-server.cjs
@@ -30,7 +30,7 @@ node dev-server.cjs
 
 - Восемь растровых изображений созданы специально для проекта встроенным OpenAI ImageGen и хранятся локально в `assets/`. Итоговый промпт описан в `REPORT.md`.
 - Шрифты [Manrope и Prata](https://fonts.google.com/) — Google Fonts, лицензия SIL Open Font License.
-- Короткое видео о работе с глиной: [cottonbro studio / Pexels](https://www.pexels.com/video/a-person-creating-a-pot-out-of-clay-6693574/), бесплатная лицензия Pexels.
+- Короткое ботаническое видео: [MDN Web Docs — CC0 video sample](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4). Файл сохранён локально как `assets/atmosphere.mp4` для надёжного воспроизведения.
 - Логотип, favicon и декоративная SVG-линия созданы для проекта вручную.
 
 ## Состав проекта
