@@ -23,7 +23,7 @@
 
 - Восемь растровых изображений созданы специально для проекта встроенным OpenAI ImageGen и хранятся локально в `assets/`. Итоговый промпт описан в `REPORT.md`.
 - Шрифты [Manrope и Prata](https://fonts.google.com/) — Google Fonts, лицензия SIL Open Font License.
-- Короткое ботаническое видео: [MDN Web Docs — CC0 video sample](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4). Файл сохранён локально как `assets/atmosphere.mp4` для надёжного воспроизведения.
+- Видео с керамистом в мастерской: [Mixkit — Ceramic artist working in the workshop](https://mixkit.co/free-stock-video/ceramic-artist-working-in-the-workshop-1971/), Mixkit Stock Video Free License. Файл сохранён локально как `assets/atmosphere.mp4` для надёжного воспроизведения.
 - Логотип, favicon и декоративная SVG-линия созданы для проекта вручную.
 
 ## Состав проекта
