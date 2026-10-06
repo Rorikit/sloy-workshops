@@ -24,6 +24,7 @@
 - Восемь растровых изображений созданы специально для проекта встроенным OpenAI ImageGen и хранятся локально в `assets/`. Итоговый промпт описан в `REPORT.md`.
 - Шрифты [Manrope и Prata](https://fonts.google.com/) — Google Fonts, лицензия SIL Open Font License.
 - Видео с керамистом в мастерской: [Mixkit — Ceramic artist working in the workshop](https://mixkit.co/free-stock-video/ceramic-artist-working-in-the-workshop-1971/), Mixkit Stock Video Free License. Файл сохранён локально как `assets/atmosphere.mp4` для надёжного воспроизведения.
+- Фоновый звук мастерской: [Mixkit — Industrial machine hum](https://mixkit.co/free-sound-effects/hum/), Mixkit Sound Effects Free License. Файл сохранён локально как `assets/workshop-hum.mp3`.
 - Логотип, favicon и декоративная SVG-линия созданы для проекта вручную.
 
 ## Состав проекта

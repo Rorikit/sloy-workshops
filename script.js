@@ -104,3 +104,78 @@ bookingForm.addEventListener('submit', (event) => {
     bookingForm.querySelector('.button-primary').disabled = false;
   }, 1200);
 });
+
+const mediaPlayer = document.querySelector('[data-media-player]');
+if (mediaPlayer) {
+  const video = mediaPlayer.querySelector('video');
+  const ambience = mediaPlayer.querySelector('audio');
+  const playButton = mediaPlayer.querySelector('.video-play');
+  const soundButton = mediaPlayer.querySelector('.video-sound');
+  const timeLabel = mediaPlayer.querySelector('.video-time');
+  const playIcon = playButton.querySelector('[aria-hidden]');
+  const playLabel = playButton.querySelector('.control-label');
+  const soundLabel = soundButton.querySelector('.control-label');
+  let soundEnabled = true;
+
+  const formatTime = (seconds) => {
+    if (!Number.isFinite(seconds)) return '0:00';
+    const minutes = Math.floor(seconds / 60);
+    return `${minutes}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
+  };
+
+  const updatePlayState = () => {
+    const isPlaying = !video.paused && !video.ended;
+    playIcon.textContent = isPlaying ? 'Ⅱ' : '▶';
+    playLabel.textContent = isPlaying ? 'Пауза' : 'Смотреть';
+    playButton.setAttribute('aria-label', isPlaying ? 'Приостановить видео' : 'Воспроизвести видео');
+  };
+
+  const syncAmbience = () => {
+    if (!ambience.duration) return;
+    const target = video.currentTime % ambience.duration;
+    if (Math.abs(ambience.currentTime - target) > .45) ambience.currentTime = target;
+  };
+
+  const playMedia = async () => {
+    await video.play();
+    if (soundEnabled) {
+      syncAmbience();
+      try { await ambience.play(); } catch { /* Audio remains user-controllable. */ }
+    }
+  };
+
+  const pauseMedia = () => {
+    video.pause();
+    ambience.pause();
+  };
+
+  playButton.addEventListener('click', () => video.paused ? playMedia() : pauseMedia());
+  video.addEventListener('click', () => video.paused ? playMedia() : pauseMedia());
+  video.addEventListener('keydown', (event) => {
+    if (event.key === ' ' || event.key === 'Enter') {
+      event.preventDefault();
+      video.paused ? playMedia() : pauseMedia();
+    }
+  });
+  video.addEventListener('play', updatePlayState);
+  video.addEventListener('pause', updatePlayState);
+  video.addEventListener('ended', () => { ambience.pause(); updatePlayState(); });
+  video.addEventListener('loadedmetadata', () => { timeLabel.textContent = `0:00 / ${formatTime(video.duration)}`; });
+  video.addEventListener('timeupdate', () => {
+    timeLabel.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+    if (soundEnabled && !video.paused) syncAmbience();
+  });
+
+  soundButton.addEventListener('click', async () => {
+    soundEnabled = !soundEnabled;
+    soundButton.setAttribute('aria-pressed', String(soundEnabled));
+    soundButton.setAttribute('aria-label', soundEnabled ? 'Выключить звук' : 'Включить звук');
+    soundLabel.textContent = soundEnabled ? 'Звук включён' : 'Звук выключен';
+    if (soundEnabled && !video.paused) {
+      syncAmbience();
+      try { await ambience.play(); } catch { /* A later click can retry playback. */ }
+    } else {
+      ambience.pause();
+    }
+  });
+}
