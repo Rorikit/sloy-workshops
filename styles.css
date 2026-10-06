@@ -148,7 +148,6 @@ blockquote footer { margin-top: 22px; color: var(--muted); font-size: 13px; }
 .atmosphere-copy p { max-width: 470px; color: var(--muted); }
 .video-frame { margin: 0; box-shadow: var(--shadow); }
 .video-frame video { aspect-ratio: 16/9; object-fit: cover; background: #111; }
-.video-frame figcaption { padding: 16px 20px; background: var(--surface); color: var(--muted); font-size: 12px; }
 
 .cta { text-align: center; background: var(--surface-2); border-top: 1px solid var(--line); }
 .cta h2 { font-size: clamp(66px, 11vw, 170px); margin-bottom: 50px; }
