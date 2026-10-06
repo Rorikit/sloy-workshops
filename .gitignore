@@ -1,0 +1,11 @@
+# Local tooling
+.idea/
+.vscode/
+node_modules/
+
+# Generated deployment artifacts
+*.tar.gz
+
+# OS files
+.DS_Store
+Thumbs.db

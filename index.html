@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="СЛОЙ — открытые городские мастерские: керамика, печать, ремонт вещей, фотография и работа с растениями в одном пространстве.">
+  <meta name="theme-color" content="#f2eddf">
+  <title>СЛОЙ — открытые городские мастерские</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="СЛОЙ — на главную">
+      <svg aria-hidden="true" viewBox="0 0 44 44"><path d="M5 14 22 5l17 9-17 9L5 14Zm0 8 17 9 17-9M5 30l17 9 17-9"/></svg>
+      <span>СЛОЙ</span>
+    </a>
+    <nav aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#workshops">Мастерские</a>
+      <a href="#atmosphere">Атмосфера</a>
+    </nav>
+    <div class="header-actions">
+      <a class="contact-link" href="tel:+74951204822">+7 495 120-48-22</a>
+      <button class="theme-toggle" type="button" aria-label="Включить тёмную тему" aria-pressed="false">
+        <span aria-hidden="true">◐</span><span class="theme-label">Тема</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Открытая мастерская · Басманный район</p>
+        <h1 id="hero-title">Делать руками.<br><em>Вместе.</em></h1>
+        <p class="hero-lead">Место, где горожане осваивают ремесло без спешки и собираются за одним большим столом.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#workshops">Выбрать занятие <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#visit">Как всё устроено</a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/ceramics.jpg" alt="Мастер формует чашку из крапчатой глины руками" width="512" height="512">
+        <figcaption>Материалы, инструменты и чай уже ждут вас</figcaption>
+      </figure>
+      <div class="hero-note" aria-label="Ближайшая мастерская">
+        <span>Ближайшая встреча</span>
+        <strong>7 октября · 19:00</strong>
+      </div>
+    </section>
+
+    <section class="manifesto section" id="about" aria-labelledby="about-title">
+      <div class="section-kicker">01 / Идея</div>
+      <div class="manifesto-grid">
+        <div>
+          <h2 id="about-title">Город становится ближе, когда мы что-то создаём вместе.</h2>
+          <svg class="thread-mark" viewBox="0 0 260 96" role="img" aria-label="Декоративная линия, похожая на свободную нить">
+            <path d="M5 65c28-66 65 23 96-19 28-38 47-20 51 4 4 25 34 30 47 5 12-23 34-16 56-41"/>
+            <circle cx="5" cy="65" r="4"/><circle cx="255" cy="14" r="4"/>
+          </svg>
+        </div>
+        <div class="body-copy">
+          <p>«СЛОЙ» — небольшая независимая мастерская во дворе бывшей типографии. Здесь не требуют опыта и не оценивают результат: важнее любопытство, материал и время, проведённое без экрана.</p>
+          <p>Каждое занятие ведёт практикующий мастер. Он показывает основу, помогает в сложном месте и оставляет достаточно свободы, чтобы вещь получилась именно вашей.</p>
+          <p>Мы собираем небольшие группы до десяти человек. Так всем хватает внимания, рабочего места и возможности познакомиться с соседями по столу.</p>
+          <p>Материалы входят в стоимость. Глину, ткань, бумагу, растения и инструменты мы выбираем у локальных поставщиков, а остатки сортируем и используем повторно.</p>
+          <p>Можно прийти одному, с другом или подарить участие. Большинство форматов рассчитано на новичков и не требует специальной подготовки.</p>
+          <p>Готовую работу вы забираете домой — иногда сразу, иногда после обжига, сушки или проявки. Мы заранее расскажем, когда за ней вернуться.</p>
+          <ul class="principles">
+            <li><strong>8–10 человек</strong><span>в одной группе</span></li>
+            <li><strong>Все материалы</strong><span>уже включены</span></li>
+            <li><strong>Можно с нуля</strong><span>опыт не нужен</span></li>
+          </ul>
+        </div>
+      </div>
+      <blockquote>
+        <p>«За два часа я перестала смотреть на время и впервые сама сделала вещь, которой действительно пользуюсь».</p>
+        <footer>Лена, участница мастерской по керамике</footer>
+      </blockquote>
+    </section>
+
+    <section class="catalog section" id="workshops" aria-labelledby="catalog-title">
+      <div class="catalog-heading">
+        <div>
+          <div class="section-kicker">02 / Расписание</div>
+          <h2 id="catalog-title">Выберите, что хочется<br>попробовать сейчас</h2>
+        </div>
+        <p><span id="result-count">8</span> мастерских в октябре</p>
+      </div>
+
+      <form class="filters" role="search" aria-label="Поиск и фильтрация мастерских">
+        <label class="search-field">
+          <span class="visually-hidden">Поиск по названию</span>
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Найти мастерскую" autocomplete="off">
+        </label>
+        <fieldset>
+          <legend class="visually-hidden">Категория</legend>
+          <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filter-chip" type="button" data-filter="craft">Ремесло</button>
+          <button class="filter-chip" type="button" data-filter="print">Печать и фото</button>
+          <button class="filter-chip" type="button" data-filter="home">Дом и растения</button>
+        </fieldset>
+      </form>
+
+      <div class="cards" aria-live="polite">
+        <article class="workshop-card" data-category="craft" data-search="керамика чашка глина">
+          <div class="card-image"><img src="assets/ceramics.jpg" alt="Руки формуют керамическую чашку" loading="lazy"><span>Осталось 3 места</span></div>
+          <div class="card-content"><div class="card-topline"><p>Керамика</p><button class="favorite" aria-label="Добавить «Чашка из пласта» в избранное" aria-pressed="false">♡</button></div><h3>Чашка из пласта</h3><p class="description">Соберём удобную чашку без гончарного круга, добавим ручку и живую фактуру. После мастерской мы покроем работу прозрачной глазурью и обожжём — забрать её можно через три недели.</p><dl><div><dt>Когда</dt><dd>7 окт · 19:00</dd></div><div><dt>Длительность</dt><dd>2,5 часа</dd></div></dl><button class="card-action" data-book="Чашка из пласта">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="workshop-card" data-category="print" data-search="линогравюра печать открытка">
+          <div class="card-image"><img src="assets/linocut.jpg" alt="Резец, валик и форма для линогравюры" loading="lazy"><span>Для начинающих</span></div>
+          <div class="card-content"><div class="card-topline"><p>Печать</p><button class="favorite" aria-label="Добавить «Линогравюра: первый тираж» в избранное" aria-pressed="false">♡</button></div><h3>Линогравюра: первый тираж</h3><p class="description">Придумаем простой сюжет, вырежем форму и вручную напечатаем серию из пяти открыток.</p><dl><div><dt>Когда</dt><dd>9 окт · 18:30</dd></div><div><dt>Длительность</dt><dd>3 часа</dd></div></dl><button class="card-action" data-book="Линогравюра: первый тираж">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="workshop-card" data-category="craft" data-search="ремонт одежды деним вышивка починка">
+          <div class="card-image image-blue"><img src="assets/mending.jpg" alt="Яркая ручная штопка на синей джинсовой ткани" loading="lazy"><span>Принесите свою вещь</span></div>
+          <div class="card-content"><div class="card-topline"><p>Ремонт вещей</p><button class="favorite" aria-label="Добавить «Видимая починка» в избранное" aria-pressed="false">♡</button></div><h3>Видимая починка</h3><p class="description">Освоим сашико и декоративную штопку, чтобы след ремонта стал частью истории любимой одежды.</p><dl><div><dt>Когда</dt><dd>11 окт · 13:00</dd></div><div><dt>Длительность</dt><dd>2 часа</dd></div></dl><button class="card-action" data-book="Видимая починка">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="workshop-card" data-category="print" data-search="фотография пленка проявка darkroom">
+          <div class="card-image image-red"><img src="assets/film.jpg" alt="Плёночная камера и чёрно-белые отпечатки в фотолаборатории" loading="lazy"><span>16+</span></div>
+          <div class="card-content"><div class="card-topline"><p>Фотография</p><button class="favorite" aria-label="Добавить «Проявить плёнку» в избранное" aria-pressed="false">♡</button></div><h3>Проявить плёнку</h3><p class="description">Пройдём весь путь чёрно-белого кадра: от зарядки бачка в темноте до контактного отпечатка. Разберёмся, как температура и время меняют негатив, безопасно смешаем химию и напечатаем один выбранный кадр под увеличителем.</p><dl><div><dt>Когда</dt><dd>12 окт · 17:00</dd></div><div><dt>Длительность</dt><dd>4 часа</dd></div></dl><button class="card-action" data-book="Проявить плёнку">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="workshop-card" data-category="home" data-search="террариум растения мох сад">
+          <div class="card-image image-green"><img src="assets/terrarium.jpg" alt="Создание миниатюрного сада в стеклянной чаше" loading="lazy"><span>Хит месяца</span></div>
+          <div class="card-content"><div class="card-topline"><p>Растения</p><button class="favorite" aria-label="Добавить «Сад под стеклом» в избранное" aria-pressed="false">♡</button></div><h3>Сад под стеклом</h3><p class="description">Соберём закрытый террариум и научимся поддерживать его маленькую экосистему.</p><dl><div><dt>Когда</dt><dd>14 окт · 19:00</dd></div><div><dt>Длительность</dt><dd>2 часа</dd></div></dl><button class="card-action" data-book="Сад под стеклом">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="workshop-card" data-category="print" data-search="переплет книга блокнот бумага">
+          <div class="card-image"><img src="assets/bookbinding.jpg" alt="Ручная прошивка книжного блока льняной нитью" loading="lazy"><span>Новая программа</span></div>
+          <div class="card-content"><div class="card-topline"><p>Бумага</p><button class="favorite" aria-label="Добавить «Открытый переплёт» в избранное" aria-pressed="false">♡</button></div><h3>Открытый переплёт</h3><p class="description">Сошьём блокнот с открытым корешком и обложкой из плотной бумаги. Выберем цвет нити и ритм стежков.</p><dl><div><dt>Когда</dt><dd>18 окт · 12:00</dd></div><div><dt>Длительность</dt><dd>3 часа</dd></div></dl><button class="card-action" data-book="Открытый переплёт">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="workshop-card" data-category="home" data-search="свеча воск аромат дом">
+          <div class="card-image"><img src="assets/candles.jpg" alt="Заливка натурального воска в стеклянную свечу" loading="lazy"><span>Ароматы на выбор</span></div>
+          <div class="card-content"><div class="card-topline"><p>Для дома</p><button class="favorite" aria-label="Добавить «Свеча: свой аромат» в избранное" aria-pressed="false">♡</button></div><h3>Свеча: свой аромат</h3><p class="description">Смешаем растительный воск и эфирные композиции, установим фитиль и оформим этикетку.</p><dl><div><dt>Когда</dt><dd>22 окт · 19:00</dd></div><div><dt>Длительность</dt><dd>2 часа</dd></div></dl><button class="card-action" data-book="Свеча: свой аромат">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="workshop-card" data-category="print" data-search="цианотипия растения фотопечать синий">
+          <div class="card-image image-blue"><img src="assets/cyanotype.jpg" alt="Синий ботанический отпечаток промывают в воде" loading="lazy"><span>Солнечная печать</span></div>
+          <div class="card-content"><div class="card-topline"><p>Фотопечать</p><button class="favorite" aria-label="Добавить «Ботаническая цианотипия» в избранное" aria-pressed="false">♡</button></div><h3>Ботаническая цианотипия</h3><p class="description">Соберём композицию из растений и проявим её солнечным светом на ткани и бумаге.</p><dl><div><dt>Когда</dt><dd>26 окт · 12:00</dd></div><div><dt>Длительность</dt><dd>2,5 часа</dd></div></dl><button class="card-action" data-book="Ботаническая цианотипия">Подробнее и записаться <span aria-hidden="true">↗</span></button></div>
+        </article>
+      </div>
+      <div class="empty-state" hidden><span aria-hidden="true">∅</span><h3>Ничего не нашлось</h3><p>Сбросьте фильтры или попробуйте другое слово.</p><button class="button button-secondary" type="button" id="reset-filters">Показать все</button></div>
+    </section>
+
+    <section class="visit section" id="visit" aria-labelledby="visit-title">
+      <div class="section-kicker">03 / Первый визит</div>
+      <div class="visit-grid">
+        <h2 id="visit-title">Как проходит<br>мастерская</h2>
+        <ol>
+          <li><span>01</span><div><h3>Вы выбираете занятие</h3><p>Записываетесь через форму, а мы присылаем подтверждение и короткую памятку.</p></div></li>
+          <li><span>02</span><div><h3>Приходите налегке</h3><p>Фартук, инструменты и материалы уже на месте. Лучше быть за десять минут до начала.</p></div></li>
+          <li><span>03</span><div><h3>Уходите с новой вещью</h3><p>И с понятной основой, чтобы продолжать дома или вернуться к следующему уровню.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="atmosphere section" id="atmosphere" aria-labelledby="atmosphere-title">
+      <div class="atmosphere-copy"><div class="section-kicker">04 / Атмосфера</div><h2 id="atmosphere-title">Шум станка, запах дерева, разговоры за чаем</h2><p>Полторы минуты из обычного вечера в «СЛОЕ». Если видео недоступно, прочитайте описание под ним.</p></div>
+      <figure class="video-frame">
+        <video controls preload="metadata" poster="assets/mending.jpg">
+          <source src="https://videos.pexels.com/video-files/6693574/6693574-hd_1920_1080_25fps.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео. Ниже есть текстовое описание.
+        </video>
+        <figcaption><strong>Текстовая альтернатива:</strong> в мастерской участники работают за общим столом, перебирают материалы, печатают изображения и обсуждают готовые работы. Свет тёплый, темп спокойный.</figcaption>
+      </figure>
+    </section>
+
+    <section class="cta section" aria-labelledby="cta-title">
+      <p class="eyebrow">Не откладывайте любопытство</p>
+      <h2 id="cta-title">Что сделаете<br><em>вы?</em></h2>
+      <button class="button button-primary" type="button" data-book="любую мастерскую">Записаться на мастерскую <span aria-hidden="true">↗</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top"><span>СЛОЙ</span><small>Открытые мастерские</small></a>
+    <address><strong>Москва, Старокирочный пер., 6</strong><a href="mailto:privet@sloy.work">privet@sloy.work</a><a href="tel:+74951204822">+7 495 120-48-22</a></address>
+    <div><p>Вт–Пт 16:00–22:00<br>Сб–Вс 11:00–21:00</p><p class="copyright">© 2026 СЛОЙ</p></div>
+  </footer>
+
+  <dialog id="booking-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="dialog-card" id="booking-form">
+      <button class="dialog-close" type="button" aria-label="Закрыть окно">×</button>
+      <p class="eyebrow">Запись</p>
+      <h2 id="dialog-title">Оставьте контакты</h2>
+      <p id="booking-subtitle">Мы подтвердим место и пришлём детали в течение дня.</p>
+      <label>Ваше имя<input name="name" required autocomplete="name" placeholder="Например, Маша"></label>
+      <label>Телефон<input name="phone" required autocomplete="tel" inputmode="tel" placeholder="+7 999 000-00-00"></label>
+      <label class="consent"><input type="checkbox" required><span>Согласен на обработку данных для записи</span></label>
+      <button class="button button-primary" value="submit">Отправить заявку</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+</body>
+</html>
